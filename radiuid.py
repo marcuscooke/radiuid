@@ -826,7 +826,7 @@ class file_management(object):
 			if "FATAL" not in clients:
 				setclientlist = []
 				for client in clients:
-					setclientlist.append(" set client " + client['Family'] + " " + client['IP Block'] + " " + client['Shared Secret'])
+					setclientlist.append(" set client " + client['IP Block'] + " " + client['Shared Secret'])
 			#### Compile set commands for uninstalled and installed CLI format ####
 			setmunge = ""
 			if tomunge:
@@ -1147,12 +1147,12 @@ class file_management(object):
 				clientfilelines.append("###################### RadiUID Generated Settings #####################\n")
 				clientfilelines.append("################### Be Careful When Changing Manually #################\n")
 			for entry in enteredclients:
-				if entry["Family"] == "ipv4":
-					fam = "ipv4addr"
-				elif entry["Family"] == "ipv6":
-					fam = "ipv6addr"
-				else:
-					return "FATAL: Unknown IP family %s" % entry["Family"]
+				#if entry["Family"] == "ipv4":
+				fam = "ipv4addr"
+				#elif entry["Family"] == "ipv6":
+				#	fam = "ipv6addr"
+				#else:
+				#	return "FATAL: Unknown IP family %s" % entry["Family"]
 				clientfilelines.append('\n')
 				clientfilelines.append('client ' + entry["IP Block"] + ' {\n')
 				clientfilelines.append('    '+fam+'    = ' + entry["IP Block"] + '\n')
