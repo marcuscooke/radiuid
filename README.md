@@ -419,7 +419,7 @@ With the exposure of the `tlsversion` and `radiusstopaction` elements to configu
 - *OTHER*: Removed PAN-OS version awareness since there are no differences between major versions in API calls.
 
 --------------------------------------
-### UPDATES IN V2.5.0 --> V2.5.1ms
+### UPDATES IN V2.5.0 --> V2.5.1mc
 
 **ADDED FEATURES:**
 
