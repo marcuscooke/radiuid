@@ -1522,12 +1522,12 @@ class data_processing(object):
 				self.filemgmt.logwriter("normal", self.ui.color("Skipping entry. Dump of dictionaries shown below.", self.ui.red))
 				self.filemgmt.logwriter("normal", self.ui.color(str(ipdict), self.ui.red))
 				self.filemgmt.logwriter("normal", self.ui.color(str(unamedict), self.ui.red))
-				self.filemgmt.logwriter("normal", "Dictionary values merged into one dictionary")
 				##### Clear the dictionaries instead of pushing inconsistent data to the Firewall #####
 				ipdict.clear()
 				unamedict.clear()
 				statusdict.clear()
 				newdict.clear()
+				self.filemgmt.logwriter("normal", self.ui.color("Batch DUMPED!", self.ui.red))
 		return newdict
 	##### Search an ordered list of values for a list of search queries and return the indices for the locations of the queries #####
 	##### Input is a list of search queries and the list of data to search through #####
