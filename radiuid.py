@@ -1,7 +1,8 @@
 #!/usr/bin/python
 
-#####        RadiUID Server v2.5.0         #####
+#####       RadiUID Server v2.5.1mc        #####
 #####       Written by John W Kerns        #####
+#####   Custom changes by Marcus Cooke     #####
 #####      http://blog.packetsar.com       #####
 ##### https://github.com/PackeTsar/radiuid #####
 
