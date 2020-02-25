@@ -5,7 +5,7 @@ An application to extract User-to-IP mappings from RADIUS accounting data and se
 
 -----------------------------------------
 ## VERSION
-The version of RadiUID documented here is: **v2.5.0**
+The version of RadiUID documented here is: **v2.5.1mc**
 
 
 -----------------------------------------
@@ -418,6 +418,12 @@ With the exposure of the `tlsversion` and `radiusstopaction` elements to configu
 
 - *OTHER*: Removed PAN-OS version awareness since there are no differences between major versions in API calls.
 
+--------------------------------------
+### UPDATES IN V2.5.0 --> V2.5.1ms
+
+**ADDED FEATURES:**
+
+- *OTHER*: If a mismatch in the number of IPs and Usernames exist in a batch, the entire batch is dumped.
 
 --------------------------------------
 ## UPGRADE PROCESSES
